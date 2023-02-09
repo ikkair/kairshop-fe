@@ -1,0 +1,105 @@
+@import "sub/fonts.css";
+@import "bootstrap/bootstrap.min.css";
+@import "sub/buttons.css";
+
+body {
+  background-color: white;
+  font-family: metropolis-r;
+}
+
+h2 {
+  font-family: metropolis-b;
+  line-height: 0.5em;
+}
+
+.category {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #cc0b04;
+  /* background-image: url("../images/Category\ T-Shirt.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: metropolis-b;
+  font-size: 2rem;
+}
+
+#category1 {
+  background-color: #cc0b04;
+  background-image: url("../images/Category\ T-Shirt.png");
+}
+
+#category2 {
+  background-color: #1c3391;
+  background-image: url("../images/Category\ Shorts.png");
+}
+
+#category3 {
+  background-color: #f67b02;
+  background-image: url("../images/Category\ Jacket.png");
+}
+
+#category4 {
+  background-color: #e31f51;
+  background-image: url("../images/Category\ Pants.png");
+}
+
+#category5 {
+  background-color: #57cd9e;
+  background-image: url("../images/Category\ Shoes.png");
+}
+
+#category6 {
+  background-color: #5086d8;
+  background-image: url("../images/Category\ Glasses.png");
+}
+
+.filter-img {
+  width: 25px;
+}
+
+.input {
+  width: 25em;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+  width: 100px;
+  margin-left: 0.5rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.label {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 5px;
+  width: 2em;
+  text-align: center;
+}
+
+.labelCat {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 5px;
+  width: 9em;
+  text-align: center;
+}
+
+input[type="checkbox"]:checked + .labelCat {
+  background: #db3022;
+  border: 1px solid #db3022;
+  color: #fff;
+}
+
+input[type="checkbox"]:checked + .label {
+  background: #db3022;
+  border: 1px solid #db3022;
+  color: #fff;
+}
+
+h1 {
+  color: red;
+}

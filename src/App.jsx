@@ -1,0 +1,30 @@
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap";
+import Register from "./pages/Register";
+import Product from "./pages/Product";
+import MyBag from "./pages/MyBag";
+import Checkout from "./pages/Checkout";
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/mybag" element={<MyBag />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </Router>
+    </>
+  );
+}
+
+export default App;

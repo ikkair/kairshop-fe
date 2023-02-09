@@ -1,0 +1,17 @@
+/* Calling font */
+@font-face {
+    font-family: "metropolis-r";
+    src: url("../../fonts/Metropolis\ Font\ family/Metropolis-Regular.otf");
+}
+@font-face {
+    font-family: "metropolis-b";
+    src: url("../../fonts/Metropolis\ Font\ family/Metropolis-Bold.otf");
+}
+
+/* Calling class font */
+.metropolis-r{
+    font-family: metropolis-r;
+}
+.metropolis-b{
+    font-family: metropolis-b;
+}

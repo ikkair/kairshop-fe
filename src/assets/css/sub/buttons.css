@@ -1,0 +1,21 @@
+/* Override Bootstrap*/
+.btn-outline-primary {
+    --bs-btn-border-color: #DB3022;
+    --bs-btn-color: #DB3022;
+    --bs-btn-hover-bg: #DB3022;
+    --bs-btn-hover-border-color:  #DB3022;
+    --bs-btn-active-bg: #DB3022;
+    --bs-btn-active-border-color: #DB3022;
+    --bs-btn-disabled-color: #DB3022;
+    --bs-btn-disabled-border-color: #DB3022;
+}
+.btn-primary {
+    --bs-btn-bg: #DB3022;
+    --bs-btn-border-color: #DB3022;
+    --bs-btn-hover-bg: #DB2022;
+    --bs-btn-hover-border-color:  #DB2022;
+    --bs-btn-active-bg: #DB3022;
+    --bs-btn-active-border-color: #DB3022;
+    --bs-btn-disabled-bg: #DB3022;
+    --bs-btn-disabled-border-color: #DB3022;
+}

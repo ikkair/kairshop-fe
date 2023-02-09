@@ -1,0 +1,11 @@
+/* Overriding nav-link */
+
+.nav-link{
+    --bs-nav-link-color: #DB3022;
+    --bs-nav-link-hover-color: #DB3022;
+    border: 1px solid #DB3022 !important;
+}
+
+.nav-link.active{
+    background-color: #DB3022 !important;
+}

@@ -1,0 +1,38 @@
+@import "sub/fonts.css";
+@import "bootstrap/bootstrap.min.css";
+@import "sub/buttons.css";
+
+body {
+  background-color: white;
+  font-family: metropolis-r;
+}
+
+.text-logo {
+  color: red;
+}
+
+.border-dark {
+  border-style: dashed !important;
+}
+
+.input {
+  width: 25em;
+}
+
+.img-wrapper {
+  width: 150px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-min,
+.btn-max {
+  width: 30px;
+  height: 30px;
+  line-height: 0;
+  border: none;
+  background-color: #d4d4d4;
+}
