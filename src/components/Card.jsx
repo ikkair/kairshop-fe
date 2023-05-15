@@ -1,57 +1,6 @@
 import React from "react";
 import iconStar from "../assets/images/Icon Star.svg";
 import { Link } from "react-router-dom";
-// import cardImage from "../assets/images/Product Dummy.png";
-// const cardData = [
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Ikkair",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-//   {
-//     cardImage: cardImage,
-//     cardTitle: "Men's formal suit - Black - White",
-//     cardPrice: 40.0,
-//     cardStore: "Zalora Cloth",
-//   },
-// ];
 
 function Card({ cardData }) {
   return (
@@ -59,7 +8,7 @@ function Card({ cardData }) {
       <div className="row g-4">
         {cardData.map((data, index) => {
           return (
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div key={index.toString()} className="col-lg-3 col-md-4 col-sm-6">
               <Link to={"product/" + data.id} key={index.toString()}>
                 <div className="card h-100">
                   <img

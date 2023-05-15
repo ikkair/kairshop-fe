@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Card from "../components/Card";
 import Category from "../components/Category";
 import Carousel from "../components/Carousel";
@@ -175,6 +176,22 @@ const dataCarousel = [
 ];
 
 function Home() {
+  let [cardData, setCardData] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:4000/products").then((result) => {
+      let cardTemp = result.data.data.map((element) => {
+        return {
+          cardTitle: element.product_name,
+          cardPrice: element.product_price,
+          cardImage: element.product_photo,
+        };
+      });
+      setCardData(cardTemp);
+      console.log(cardTemp);
+      console.log(cardData);
+    });
+  }, []);
+
   return (
     <>
       <main className="container pt-5 mt-5">

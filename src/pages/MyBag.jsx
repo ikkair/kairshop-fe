@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/css/mybag.css";
 import product1 from "../assets/images/Product V1-1.png";
 import product5 from "../assets/images/Product V1-5.png";
+import { Link } from "react-router-dom";
 
 function MyBag() {
   return (
@@ -26,9 +27,9 @@ function MyBag() {
                     <span className="text-secondary">(2 Items selected)</span>
                   </label>
                 </div>
-                <a href="#" className="text-danger ms-auto">
+                <Link href="#" className="text-danger ms-auto">
                   <b>Delete</b>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="card shadow-sm mb-2">
@@ -44,7 +45,7 @@ function MyBag() {
                     <img
                       src={product1}
                       className="rounded-4 me-2"
-                      alt="image"
+                      alt=""
                       width="103px"
                     />
                     <div>
@@ -82,7 +83,7 @@ function MyBag() {
                     <img
                       src={product5}
                       className="rounded-4 me-2"
-                      alt="image"
+                      alt=""
                       width="103px"
                     />
                     <div>
